@@ -1,0 +1,38 @@
+var x, y, v, z, a, b, u, w;
+
+ function setup() {
+	createCanvas(400, 400);
+
+  x = 0;
+  y = 200;
+  v = 5;
+  z = 5;
+  u = 3;
+  w = 4
+  a = 200;
+  b = 0;
+}
+
+function draw() {
+	background(225);
+  
+  fill ('blue')
+  ellipse(x,y,50,50);
+  x = x + v;
+  y = y + z;
+
+if(x <= 0 || x > 400){
+    v = v * -1 }
+if(y <= 0 || y > 400){
+    z = z * -1 }
+
+  fill ('red')
+  rect(a,b,50,50);
+  a = a + u;
+  b = b + w;
+
+if(a <= 0 || a > 400){
+    u = u * -1 }
+if(b <= 0 || b > 400){
+    w = w * -1 }
+}
